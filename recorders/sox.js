@@ -2,6 +2,7 @@ module.exports = (options) => {
   const cmd = 'sox'
 
   let args = [
+    '-t', 'waveaudio',
     '--default-device',
     '--no-show-progress', // show no progress
     '--rate', options.sampleRate, // sample rate
